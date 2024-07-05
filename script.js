@@ -1,13 +1,26 @@
-// Example JavaScript for interactive elements
 document.addEventListener('DOMContentLoaded', function() {
-    // Example: Add a click event listener to a button
-    const button = document.querySelector('button');
-    button.addEventListener('click', function(event) {
-        event.preventDefault();
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
-        // Example: Send data to server or perform other actions
+    // 获取所有导航链接
+    const navLinks = document.querySelectorAll('nav a');
+
+    // 为每个导航链接添加点击事件监听器
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // 阻止默认链接行为
+
+            // 获取目标部分的 ID（例如点击 "Home" 时，获取到 "home"）
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                // 计算目标部分的顶部偏移量
+                const offsetTop = targetSection.offsetTop;
+
+                // 使用 smooth scroll 动画滚动到目标部分
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
 });
