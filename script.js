@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 获取所有导航链接
+    console.log('Document is ready!');
     const navLinks = document.querySelectorAll('nav a');
 
     // 为每个导航链接添加点击事件监听器
