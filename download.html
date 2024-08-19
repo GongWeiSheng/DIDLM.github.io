@@ -21,16 +21,16 @@
             line-height: 1.6;
         }
 
-        .img-large {
+        .img-original {
             display: block;
-            margin: 0 auto;
-            max-width: 50%; /* 图片大小减半 */
+            margin: 20px 0; /* 在图片上方和下方添加一些外边距 */
+            max-width: 100%; /* 确保图片不会超过容器宽度 */
             height: auto;
         }
 
-        .img-small {
+        .img-inline {
             display: inline-block;
-            max-width: 25%; /* 图片大小为四分之一 */
+            max-width: 100%; /* 确保图片不会超过容器宽度 */
             height: auto;
             margin-left: 20px;
             vertical-align: middle; /* 图片与文本垂直对齐 */
@@ -63,15 +63,15 @@
 
                 <p>Our dataset is hosted on ScienceDB, and it includes the following content:</p>
                 
-                <!-- 第一张图片，相关内容的下方居中显示 -->
-                <img src="image3.jpg" alt="Content Image" class="img-large">
+                <!-- 第一张图片，显示原图大小 -->
+                <img src="image3.jpg" alt="Content Image" class="img-original">
                 
                 <p>The upload format includes MCAP and:</p>
 
-                <!-- 第二张图片，段落右边显示 -->
-                <img src="image4.jpg" alt="Format Image" class="img-small">
+                <!-- 第二张图片，显示原图大小，文本右边 -->
+                <img src="image4.jpg" alt="Format Image" class="img-inline">
                 
-                <p>The download link is: <a href="YOUR_DOWNLOAD_LINK_HERE">Click Here to Download</a></p>
+                <p>The download link is: <a href="https://www.scidb.cn/anonymous/TnpRanF1" target="_blank">Click Here to Download</a></p>
 
                 <p>We welcome you to use our dataset.</p>
             </div>
