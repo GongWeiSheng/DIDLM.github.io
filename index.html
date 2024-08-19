@@ -3,56 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - DIDLM Dataset Website</title>
+    <title>DIDLM Dataset Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=New+Times+Roam&display=swap">
     <style>
         body {
             font-family: 'New Times Roam', serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
         }
 
-        .text-container {
+        h2 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
             text-align: left;
-            padding: 20px;
+            margin-bottom: 20px;
         }
 
-        .text-container p {
-            margin: 10px 0;
-            font-size: 2.5em; /* 增大文字字号 */
-            font-weight: bold;
-            font-family: 'New Times Roam', serif; /* 使用艺术字风格 */
-        }
-
-        .text-container p:first-of-type {
+        .highlight-red {
             color: red;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000000; /* 艺术字效果 */
         }
 
-        .text-container p:nth-of-type(2) {
+        .highlight-yellow {
             color: yellow;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000000;
         }
 
-        .text-container p:nth-of-type(3) {
+        .highlight-green {
             color: green;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000000;
         }
 
-        .text-container p:nth-of-type(4) {
+        .highlight-purple {
             color: purple;
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000000;
         }
     </style>
 </head>
 <body>
-    <div class="text-container">
-        <p>The DIDLM Dataset</p>
-        <p>Includes Infrared Cameras</p>
-        <p>And LiDAR Sensors</p>
-        <p>For 3D Mapping</p>
-    </div>
+    <header>
+        <div class="container">
+            <h1>DIDLM Dataset Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn">Home</a></li>
+                    <li><a href="overview.html" class="btn">Overview</a></li>
+                    <li><a href="calibration.html" class="btn">Calibration</a></li>
+                    <li><a href="groundtruth.html" class="btn">Groundtruth</a></li>
+                    <li><a href="download.html" class="btn">Download</a></li>
+                    <li><a href="citations.html" class="btn">Citations</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="blue-section">
+            <div class="container">
+                <h2>Home</h2>
+                <p class="highlight-red">Looking for the latest and most comprehensive sensor dataset?</p>
+                <p class="highlight-yellow">Need data for extreme weather, bumpy roads, and day-night conditions?</p>
+                <p class="highlight-green">Searching for a dataset usable in both indoor and outdoor environments?</p>
+                <p class="highlight-purple">Want a dataset that allows comparison of different sensors' performance across various weather conditions, road surfaces, lighting, and speeds?</p>
+                <p>Welcome to DIDLM! We offer the latest and most comprehensive sensor datasets, covering a wide range of extreme weather, complex road conditions, day and night scenarios, indoor and outdoor environments, and varying speeds. By conducting experiments on identical routes, you can compare the impact of different conditions on various sensors. Here, your data expectations will be met.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DIDLM Dataset Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
