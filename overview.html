@@ -6,6 +6,35 @@
     <title>Overview - DIDLM Dataset Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=New+Times+Roam&display=swap">
+    <style>
+        body {
+            font-family: 'New Times Roam', serif;
+        }
+
+        h2 {
+            font-size: 2em; /* 增大标题字号 */
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.25em; /* 增大段落文字的字号 */
+            line-height: 1.6;
+        }
+
+        .img-large {
+            display: block;
+            margin: 0 auto;
+            max-width: 50%; /* 图片大小减半 */
+            height: auto;
+        }
+
+        .img-small {
+            float: right;
+            max-width: 25%; /* 图片大小为四分之一 */
+            height: auto;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -29,14 +58,20 @@
         <section id="overview" class="blue-section">
             <div class="container">
                 <h2>Overview</h2>
+                
+                <!-- 第一张图片，标题下方，居中显示 -->
+                <img src="image1.jpg" alt="Sample Image 1" class="img-large">
+                
                 <p>The DIDLM dataset includes data from Infrared Cameras, Depth Cameras, LiDAR, and 4D Millimeter-Wave Radar.</p>
-                <p>This study introduces a comprehensive multi-sensor dataset tailored for 3D mapping in challenging indoor and outdoor environments. The dataset comprises data from 4D millimeter-wave radar, 3D LiDAR, infrared cameras, depth cameras, 2D LiDAR, centimeter-level GPS, and millimeter-level RTK, facilitating the exploration of advanced perception and mapping techniques.</p>
-                <p>By integrating diverse sensor data, perceptual capabilities are enhanced in diverse and extreme conditions including sunny, rainy, snowy, daytime, nighttime, and uneven road surfaces. The dataset also includes interactive robot data collected at varying speeds indoors and outdoors, providing reliable ground truth derived from RTK or LiDAR and IMU fusion.</p>
-                <p>We conducted SLAM comparisons on similar routes to analyze the influence of different complex scenes on various sensors. Various SLAM algorithms were applied to process the dataset, revealing performance disparities across different scenarios. Our dataset, encompassing multiple sensors, diverse road conditions, and varying speeds, makes significant contributions to robotics and autonomous driving SLAM research.</p>
 
-                <!-- 添加两张图片 -->
-                <img src="image1.jpg" alt="Sample Image 1" style="max-width: 100%; height: auto;">
-                <img src="image2.jpg" alt="Sample Image 2" style="max-width: 100%; height: auto;">
+                <p>This study introduces a comprehensive multi-sensor dataset tailored for 3D mapping in challenging indoor and outdoor environments. The dataset comprises data from 4D millimeter-wave radar, 3D LiDAR, infrared cameras, depth cameras, 2D LiDAR, centimeter-level GPS, and millimeter-level RTK, facilitating the exploration of advanced perception and mapping techniques.</p>
+                
+                <!-- 第二张图片，段落右边显示 -->
+                <img src="image2.jpg" alt="Sample Image 2" class="img-small">
+                
+                <p>By integrating diverse sensor data, perceptual capabilities are enhanced in diverse and extreme conditions including sunny, rainy, snowy, daytime, nighttime, and uneven road surfaces. The dataset also includes interactive robot data collected at varying speeds indoors and outdoors, providing reliable ground truth derived from RTK or LiDAR and IMU fusion.</p>
+                
+                <p>We conducted SLAM comparisons on similar routes to analyze the influence of different complex scenes on various sensors. Various SLAM algorithms were applied to process the dataset, revealing performance disparities across different scenarios. Our dataset, encompassing multiple sensors, diverse road conditions, and varying speeds, makes significant contributions to robotics and autonomous driving SLAM research.</p>
             </div>
         </section>
     </main>
