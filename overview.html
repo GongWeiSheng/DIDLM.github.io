@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIDLM Dataset Website</title>
+    <title>Overview - DIDLM Dataset Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=New+Times+Roam&display=swap">
     <style>
@@ -12,54 +12,30 @@
         }
 
         h2 {
-            font-size: 2em;
+            font-size: 2em; /* 增大标题字号 */
             text-align: center;
         }
 
         p {
-            font-size: 1.5em;
+            font-size: 1.25em; /* 增大段落文字的字号 */
             line-height: 1.6;
-            text-align: left;
-            margin-bottom: 20px;
         }
 
-        .highlight-red {
-            color: red;
-            font-size: 2em;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px #000000;
-        }
-
-        .highlight-yellow {
-            color: yellow;
-            font-size: 2em;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px #000000;
-        }
-
-        .highlight-green {
-            color: green;
-            font-size: 2em;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px #000000;
-        }
-
-        .highlight-purple {
-            color: purple;
-            font-size: 2em;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px #000000;
-        }
-
-        .image-container {
+        .image-row {
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            gap: 20px; /* 图片之间的间距 */
+            margin-bottom: 20px; /* 图片与下方内容的间距 */
         }
 
-        .image-container img {
-            max-width: 45%;
-            margin: 0 10px;
+        .image-row img {
+            max-width: 100%;
+            height: auto;
+            flex: 1 1 45%; /* 图片自适应大小，占据容器的45%宽度 */
+        }
+
+        .image-row-small img {
+            flex: 1 1 22%; /* 图片宽度调整为原来的50% */
         }
     </style>
 </head>
@@ -82,18 +58,29 @@
     </header>
 
     <main>
-        <section id="home" class="blue-section">
+        <section id="overview" class="blue-section">
             <div class="container">
-                <h2>Home</h2>
-                <p class="highlight-red">Looking for the latest and most comprehensive sensor dataset?</p>
-                <p class="highlight-yellow">Need data for extreme weather, bumpy roads, and day-night conditions?</p>
-                <p class="highlight-green">Searching for a dataset usable in both indoor and outdoor environments?</p>
-                <p class="highlight-purple">Want a dataset that allows comparison of different sensors' performance across various weather conditions, road surfaces, lighting, and speeds?</p>
-                <p>Welcome to DIDLM! We offer the latest and most comprehensive sensor datasets, covering a wide range of extreme weather, complex road conditions, day and night scenarios, indoor and outdoor environments, and varying speeds. By conducting experiments on identical routes, you can compare the impact of different conditions on various sensors. Here, your data expectations will be met.</p>
-            </div>
-            <div class="image-container">
-                <img src="image6.jpg" alt="Image 6">
-                <img src="image7.jpg" alt="Image 7">
+                <h2>Overview</h2>
+                
+                <!-- 第一行图片，缩小到原来的一半 -->
+                <div class="image-row image-row-small">
+                    <img src="image1.jpg" alt="Sample Image 1">
+                    <img src="image2.jpg" alt="Sample Image 2">
+                </div>
+                
+                <p>The DIDLM dataset includes data from Infrared Cameras, Depth Cameras, LiDAR, and 4D Millimeter-Wave Radar.</p>
+
+                <p>This study introduces a comprehensive multi-sensor dataset tailored for 3D mapping in challenging indoor and outdoor environments. The dataset comprises data from 4D millimeter-wave radar, 3D LiDAR, infrared cameras, depth cameras, 2D LiDAR, centimeter-level GPS, and millimeter-level RTK, facilitating the exploration of advanced perception and mapping techniques.</p>
+
+                <p>By integrating diverse sensor data, perceptual capabilities are enhanced in diverse and extreme conditions including sunny, rainy, snowy, daytime, nighttime, and uneven road surfaces. The dataset also includes interactive robot data collected at varying speeds indoors and outdoors, providing reliable ground truth derived from RTK or LiDAR and IMU fusion.</p>
+
+                <p>We conducted SLAM comparisons on similar routes to analyze the influence of different complex scenes on various sensors. Various SLAM algorithms were applied to process the dataset, revealing performance disparities across different scenarios. Our dataset, encompassing multiple sensors, diverse road conditions, and varying speeds, makes significant contributions to robotics and autonomous driving SLAM research.</p>
+
+                <!-- 最后一行图片 -->
+                <div class="image-row">
+                    <img src="image6.jpg" alt="Sample Image 6">
+                    <img src="image7.jpg" alt="Sample Image 7">
+                </div>
             </div>
         </section>
     </main>
@@ -103,7 +90,5 @@
             <p>&copy; 2024 DIDLM Dataset Website. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
