@@ -1,6 +1,3 @@
-好的，我们将只使用Roboto字体，并确保所有字体样式都应用了这个字体。以下是完整的HTML代码，包括Roboto字体的应用和其他必要的样式调整：
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,17 +23,23 @@
             align-items: flex-start;
             margin-bottom: 20px;
             width: 100%;
+            border-bottom: 1px solid #ccc; /* 添加分界线 */
+            padding-bottom: 20px;
+        }
+        .profile:last-child {
+            border-bottom: none; /* 最后一个人物没有分界线 */
         }
         .profile img {
             width: 100px; /* 根据需要调整 */
             height: auto;
             margin-right: 20px;
         }
-        .profile-large img {
-            width: 200px; /* 第一个人物照片更大 */
-        }
         .profile-info {
             flex-grow: 1;
+        }
+        .profile-info h3 {
+            margin: 0;
+            color: #333;
         }
         @media (min-width: 768px) {
             .profile-container {
@@ -51,9 +54,6 @@
             }
             .profile img {
                 width: 150px;
-            }
-            .profile-large img {
-                width: 300px;
             }
         }
     </style>
@@ -80,107 +80,98 @@
     <main>
         <section id="contact" class="blue-section">
             <div class="container">
-                <h2>Intelligent wireless communication and perception team</h2>
+                <h2>Intelligent Wireless Communication and Perception Team</h2>
                 <div class="profile-container">
-                    <!-- 第一个人物，照片更大 -->
-                    <div class="profile profile-large">
+                    <!-- 第一个人物 -->
+                    <div class="profile">
                         <img src="hc.jpg" alt="He Chen">
                         <div class="profile-info">
-                            <h3>He Chen</h3>
+                            <h3>Chen He</h3> <!-- 调整姓名顺序 -->
                             <p>Education: Ph.D., University of British Columbia, UBC, 2013, Advisor: Z. Jane Wang, Fellow of the Canadian Academy of Engineering</p>
                             <p>Position: Professor (Level 3) / Ph.D. Supervisor, School of Information, Northwest University, Vice Dean of the Graduate School</p>
                             <p>Email: chenhe@nwu.edu.cn; Office Phone: 15029610156</p>
                             <p>Introduction: Main research areas are intelligent signal and information processing and the Internet of Things, with main directions including UAV positioning and communication, multi-type sensor data fusion in assisted driving, and electromagnetic map generation. Close academic cooperation with the University of British Columbia in the above research directions. Over 60 papers published in top/renowned journals and conferences such as IEEE Journal on Selected Areas in Communications (CAS 1st Division, Impact Factor 16.1, CCF Class A), IEEE Transactions on Wireless Communications (CAS 1st Division, Impact Factor 10.4), IEEE Internet of Things Journal (CAS 1st Division, Impact Factor 10.6), IEEE Transactions on Industrial Informatics (CAS SCI 1st Division, Impact Factor 10.2), IEEE Transactions on Quantum Engineering, etc.</p>
                         </div>
                     </div>
-                    
                     <!-- 第二个人物 -->
                     <div class="profile">
                         <img src="gws.jpg" alt="Gong WeiSheng">
                         <div class="profile-info">
-                            <h3>Gong WeiSheng</h3>
+                            <h3>WeiSheng Gong</h3> <!-- 调整姓名顺序 -->
                             <p>Education: Ph.D. candidate at Northwest University</p>
                             <p>Contact: GongWeiSheng@stumail.nwu.edu.cn</p>
                             <p>Introduction: Graduated from Xi'an Jiaotong University in 2020. Enrolled in the School of Information Science at Northwest University in 2021. Main research areas include autonomous driving and ground robot SLAM, multi-sensor fusion experimental platform construction and dataset collection, multi-sensor fusion SLAM construction.</p>
                         </div>
                     </div>
-
                     <!-- 第三个人物 -->
                     <div class="profile">
                         <img src="wt.jpg" alt="Wu Tong">
                         <div class="profile-info">
-                            <h3>Wu Tong</h3>
+                            <h3>Tong Wu</h3> <!-- 调整姓名顺序 -->
                             <p>Education: Ph.D. candidate at Northwest University</p>
                             <p>Position: Engineer at Northwest University</p>
                             <p>Resume: Completed undergraduate and master's degrees at Nanjing University, focusing on electronic engineering and computer science courses. Currently working at Northwest University while pursuing a Ph.D., with research directions in autonomous driving and object detection.</p>
                         </div>
                     </div>
-
                     <!-- 第四个人物 -->
                     <div class="profile">
                         <img src="skj.jpg" alt="Su Kaijie">
                         <div class="profile-info">
-                            <h3>Su Kaijie</h3>
+                            <h3>Kaijie Su</h3> <!-- 调整姓名顺序 -->
                             <p>Education: Master's candidate at Northwest University</p>
                             <p>Introduction: Obtained a bachelor's degree from Northwest University in 2022. Research areas include autonomous driving, 4D millimeter-wave radar SLAM.</p>
                         </div>
                     </div>
-
                     <!-- 第五个人物 -->
                     <div class="profile">
                         <img src="lqy.jpg" alt="Li Qingyong">
                         <div class="profile-info">
-                            <h3>Li Qingyong</h3>
+                            <h3>Qingyong Li</h3> <!-- 调整姓名顺序 -->
                             <p>Education: Master's candidate at Northwest University</p>
                             <p>Introduction: Obtained a bachelor's degree from Northwest University in 2022. Research areas include autonomous driving, multi-sensor fusion for object detection.</p>
                         </div>
                     </div>
-
                     <!-- 第六个人物 -->
                     <div class="profile">
                         <img src="lyc.jpg" alt="Li Yucheng">
                         <div class="profile-info">
-                            <h3>Li Yucheng</h3>
+                            <h3>Yucheng Li</h3> <!-- 调整姓名顺序 -->
                             <p>Education: Master's candidate at Northwest University</p>
                             <p>Introduction: Obtained a bachelor's degree from Northwest University in 2023. Research areas include autonomous driving, computer vision.</p>
                         </div>
                     </div>
-
                     <!-- 第七个人物 -->
                     <div class="profile">
                         <img src="zjw.jpg" alt="Zhang Jiawen">
                         <div class="profile-info">
-                            <h3>Zhang Jiawen</h3>
+                            <h3>Jiawen Zhang</h3> <!-- 调整姓名顺序 -->
                             <p>Education: Master's candidate at Northwest University</p>
                             <p>Introduction: Graduated from Northwest University with a bachelor's degree in 2023. Main research direction is assistive driving SLAM.</p>
                         </div>
                     </div>
-
                     <!-- 第八个人物 -->
                     <div class="profile">
                         <img src="dl.jpg" alt="Ding Lei">
                         <div class="profile-info">
-                            <h3>Ding Lei</h3>
+                            <h3>Lei Ding</h3> <!-- 调整姓名顺序 -->
                             <p>Education: Master's candidate at Northwest University</p>
                             <p>Introduction: Obtained a bachelor's degree from Northwest University in 2023. Research areas include autonomous driving, multi-sensor fusion SLAM.</p>
                         </div>
                     </div>
-
                     <!-- 第九个人物 -->
                     <div class="profile">
                         <img src="qyy.jpg" alt="Qu Yayun">
                         <div class="profile-info">
-                            <h3>Qu Yayun</h3>
+                            <h3>Yayun Qu</h3> <!-- 调整姓名顺序 -->
                             <p>Education: Master's candidate at Northwest University</p>
                             <p>Introduction: Obtained a bachelor's degree from Northwest University in 2023. Research areas include autonomous driving, computer vision.</p>
                         </div>
                     </div>
-
                     <!-- 第十个人物 -->
                     <div class="profile">
                         <img src="chb.jpg" alt="Chen Hongbo">
                         <div class="profile-info">
-                            <h3>Chen Hongbo</h3>
+                            <h3>Hongbo Chen</h3> <!-- 调整姓名顺序 -->
                             <p>Education: Master's candidate at Northwest University</p>
                             <p>Introduction: Obtained a bachelor's degree from Northwest University in 2023. Research areas include autonomous driving, computer vision.</p>
                         </div>
