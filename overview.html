@@ -36,17 +36,18 @@
             height: auto;
         }
 
-        .image-inline {
-            float: left;
-            margin: 0 20px 20px 0;
-            max-width: 40%;
-            height: auto;
-        }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+        }
+
+        .image-bottom {
+            display: block;
+            margin: 40px auto 20px;
+            max-width: 100%;
+            height: auto;
+            text-align: center;
         }
 
         footer {
@@ -96,10 +97,11 @@
                     </p>
                     <p>
                         We conducted SLAM comparisons on similar routes to analyze the influence of different complex scenes on various sensors. Various SLAM algorithms were applied to process the dataset, revealing performance disparities across different scenarios. Our dataset, encompassing multiple sensors, diverse road conditions, and varying speeds, makes significant contributions to robotics and autonomous driving SLAM research.
-                    <img src="image7.JPG" alt="Sample Image 7" class="image-inline">
                     </p>
-                    
                 </div>
+
+                <!-- Image moved to the bottom of main content -->
+                <img src="image7.JPG" alt="Sample Image 7" class="image-bottom">
             </div>
         </section>
     </main>
