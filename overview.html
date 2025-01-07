@@ -3,72 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIDLM Dataset Website</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Overview - DIDLM Dataset Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto', serif;
+            margin: 0;
+            padding: 0;
         }
 
         h2 {
             font-size: 2em;
             text-align: center;
-            font-weight: 700;
+            margin-bottom: 20px;
         }
 
         p {
-            font-size: 1.5em;
+            font-size: 1.25em;
             line-height: 1.6;
-            text-align: left;
-            margin-bottom: 20px;
         }
 
-        .highlight-red {
-            color: red;
-            font-size: 2em;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px #000000; 
-        }
-
-        .highlight-yellow {
-            color: yellow;
-            font-size: 2em;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px #000000;
-        }
-
-        .highlight-green {
-            color: green;
-            font-size: 2em;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px #000000;
-        }
-
-        .highlight-purple {
-            color: purple;
-            font-size: 2em;
-            font-weight: 700;
-            text-shadow: 2px 2px 4px #000000;
-        }
-
-        .single-image {
-            display: block;
-            margin: 0 auto 20px;
-        }
-
-        .image-container {
+        .image-row {
             display: flex;
-            align-items: center;
+            justify-content: center;
+            gap: 20px;
             margin-bottom: 20px;
         }
 
-        .image-container img {
-            max-width: 200px; /* Adjust as needed */
-            margin-right: 20px;
+        .image-row img {
+            max-width: 100%;
+            height: auto;
         }
 
-        .image-container p {
-            flex: 1;
+        .image-inline {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 40%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f4f4f4;
         }
     </style>
 </head>
@@ -91,28 +75,33 @@
     </header>
 
     <main>
-        <section id="home" class="blue-section">
+        <section id="overview" class="blue-section">
             <div class="container">
-                <h2>Home</h2>
-                <img src="image2.JPG" alt="Image 1" class="single-image">
-                <div class="image-container">
-                    <img src="image4.JPG" alt="Image 2">
-                    <p class="highlight-red">Looking for the latest and most comprehensive sensor dataset?</p>
+                <h2>Overview</h2>
+
+                <!-- First image (image2.jpg) displayed separately -->
+                <div class="image-row">
+                    <img src="image2.jpg" alt="Sample Image 2">
                 </div>
-                <div class="image-container">
-                    <img src="image3.JPG" alt="Image 3">
-                    <p class="highlight-yellow">Need data for extreme weather, bumpy roads, and day-night conditions?</p>
+
+                <div>
+                    <!-- Inline images with text -->
+                    <img src="image6.jpg" alt="Sample Image 6" class="image-inline">
+                    <img src="image7.jpg" alt="Sample Image 7" class="image-inline">
+
+                    <p>
+                        The DIDLM dataset includes data from Infrared Cameras, Depth Cameras, LiDAR, and 4D Millimeter-Wave Radar.
+                    </p>
+                    <p>
+                        This study introduces a comprehensive multi-sensor dataset tailored for 3D mapping in challenging indoor and outdoor environments. The dataset comprises data from 4D millimeter-wave radar, 3D LiDAR, infrared cameras, depth cameras, 2D LiDAR, centimeter-level GPS, and millimeter-level RTK, facilitating the exploration of advanced perception and mapping techniques.
+                    </p>
+                    <p>
+                        By integrating diverse sensor data, perceptual capabilities are enhanced in diverse and extreme conditions including sunny, rainy, snowy, daytime, nighttime, and uneven road surfaces. The dataset also includes interactive robot data collected at varying speeds indoors and outdoors, providing reliable ground truth derived from RTK or LiDAR and IMU fusion.
+                    </p>
+                    <p>
+                        We conducted SLAM comparisons on similar routes to analyze the influence of different complex scenes on various sensors. Various SLAM algorithms were applied to process the dataset, revealing performance disparities across different scenarios. Our dataset, encompassing multiple sensors, diverse road conditions, and varying speeds, makes significant contributions to robotics and autonomous driving SLAM research.
+                    </p>
                 </div>
-                <div class="image-container">
-                    <img src="image4.JPG" alt="Image 4">
-                    <p class="highlight-green">Searching for a dataset usable in both indoor and outdoor environments?</p>
-                </div>
-                <div class="image-container">
-                    <img src="image5.JPG" alt="Image 5">
-                    <p class="highlight-purple">Want a dataset that allows comparison of different sensors' performance across various weather conditions, road surfaces, lighting, and speeds?</p>
-                </div>
-                <p>Welcome to DIDLM!</p>     
-                <p>We offer the latest and most comprehensive sensor datasets, covering a wide range of extreme weather, complex road conditions, day and night scenarios, indoor and outdoor environments, and varying speeds. By conducting experiments on identical routes, you can compare the impact of different conditions on various sensors. Here, your data expectations will be met.</p>
             </div>
         </section>
     </main>
