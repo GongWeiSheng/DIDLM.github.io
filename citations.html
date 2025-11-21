@@ -36,6 +36,20 @@
             padding: 10px 0;
             background-color: #f4f4f4;
         }
+
+        /* 仅新增引用容器样式，保持简洁不破坏原有风格 */
+        .citation-container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+            font-size: 1em;
+            line-height: 1.8;
+            text-align: left;
+            white-space: pre-wrap;
+            font-family: 'Roboto', sans-serif;
+        }
     </style>
 </head>
 <body>
@@ -60,8 +74,10 @@
         <section id="citations" class="blue-section">
             <div class="container">
                 <h2>Citations</h2>
-                <p>Cite the DIDLM dataset in your research using the following references:</p>
-                 <div class="citation-block">
+                <p>Cite the DIDLM dataset in your research using the following references.</p>
+                
+                <!-- 仅添加引用内容，使用简洁容器包裹 -->
+                <div class="citation-container">
 @ARTICLE{11261223,
   author={Gong, Weisheng and He, Chen and Su, Kaijie and Li, Qingyong and Wu, Tong and Jane Wang, Z.},
   journal={IEEE Transactions on Intelligent Transportation Systems}, 
@@ -73,8 +89,6 @@
   keywords={Cameras;Simultaneous localization and mapping;Sensors;Laser radar;Robots;Robot vision systems;Roads;Millimeter wave radar;Visualization;Radar imaging;Multi-sensor dataset;challenging scenarios;infrared cameras;depth cameras;LiDAR;4D millimeter-wave radar},
   doi={10.1109/TITS.2025.3632411}}
                 </div>
-                 <p style="font-size: 1em; color: #666;">Copy the above BibTeX entry to your reference manager (e.g., BibTeX, EndNote).</p>
-            </div>
             </div>
         </section>
     </main>
