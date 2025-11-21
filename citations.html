@@ -36,6 +36,56 @@
             padding: 10px 0;
             background-color: #f4f4f4;
         }
+
+        /* 引用样式：代码块格式，便于复制 */
+        .citation-block {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #007bff;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace; /* 等宽字体，保持引用格式一致 */
+            font-size: 1em;
+            line-height: 1.8;
+            white-space: pre-wrap; /* 自动换行，不破坏格式 */
+            word-break: break-all;
+            color: #333;
+        }
+
+        /* 导航按钮样式补充（保持页面一致性） */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* 蓝色区块样式补充 */
+        .blue-section {
+            background-color: #e6f2ff;
+            padding: 40px 0;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +111,22 @@
             <div class="container">
                 <h2>Citations</h2>
                 <p>Cite the DIDLM dataset in your research using the following references.</p>
+                
+                <!-- 嵌入 IEEE 引用格式 -->
+                <div class="citation-block">
+@ARTICLE{11261223,
+  author={Gong, Weisheng and He, Chen and Su, Kaijie and Li, Qingyong and Wu, Tong and Jane Wang, Z.},
+  journal={IEEE Transactions on Intelligent Transportation Systems}, 
+  title={DIDLM: A SLAM Dataset for Difficult Scenarios Featuring Infrared, Depth Cameras, LiDAR, 4D Radar, and Others Under Adverse Weather, Low Light Conditions, and Rough Roads}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-13},
+  keywords={Cameras;Simultaneous localization and mapping;Sensors;Laser radar;Robots;Robot vision systems;Roads;Millimeter wave radar;Visualization;Radar imaging;Multi-sensor dataset;challenging scenarios;infrared cameras;depth cameras;LiDAR;4D millimeter-wave radar},
+  doi={10.1109/TITS.2025.3632411}}
+                </div>
+                
+                <p style="font-size: 1em; color: #666;">Copy the above BibTeX entry to your reference manager (e.g., BibTeX, EndNote).</p>
             </div>
         </section>
     </main>
